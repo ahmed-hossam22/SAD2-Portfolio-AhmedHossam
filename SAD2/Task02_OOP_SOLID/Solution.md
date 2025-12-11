@@ -95,8 +95,6 @@
   - `IdManager` / `IdValidator` (SRP)
   - `Schedule` interface and `SimpleSchedule` / `DoctorSchedule` implementations (OCP)
   - Relationships between `Doctor`, `Patient`, `Appointment`, `MedicalRecord`, `Prescription`, and `Room`.
-- (Upload the diagram image file as `diagram_task02.jpg` or `diagram_task02.png` in the same folder.)
-
 ---
 
 ## 5. Java Implementation  
@@ -124,10 +122,3 @@
   - Scheduling behavior abstracted by `Schedule` interface and multiple implementations (OCP).  
   - Consumers (e.g., `Doctor`) depend on interface abstractions — no code changes needed to add new schedule types.
 ---
-
-
-### Final note
-Upload your Java files and UML image to the folder and then I’ll:
-1. Review the uploaded Java files quickly to confirm the SRP/OCP mapping in your code.  
-2. Help you write a short `DiagramExplanation.md` and `Reflection.md` that reference your actual filenames and implementation choices.  
-3. Make sure all commit messages and README entries are clear for submission.
