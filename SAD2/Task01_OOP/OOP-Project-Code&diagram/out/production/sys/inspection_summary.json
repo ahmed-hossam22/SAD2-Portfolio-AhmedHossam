@@ -1,0 +1,36 @@
+{
+  "total_files": 11,
+  "files_sample": [
+    "Admin.java",
+    "Appointment.java",
+    "Doctor.java",
+    "HospitalManagement.java",
+    "Main.java",
+    "MedicalRecord.java",
+    "Nurse.java",
+    "Patient.java",
+    "Prescription.java",
+    "Room.java",
+    "User.java"
+  ],
+  "java_files_count": 11,
+  "java_files_sample": [
+    "Admin.java",
+    "Appointment.java",
+    "Doctor.java",
+    "HospitalManagement.java",
+    "Main.java",
+    "MedicalRecord.java",
+    "Nurse.java",
+    "Patient.java",
+    "Prescription.java",
+    "Room.java",
+    "User.java"
+  ],
+  "main_files_found": [
+    "Main.java"
+  ],
+  "main_file_contents_preview": {
+    "Main.java": "public class Main {\n    public static void main(String[] args) {\n        HospitalManagement hm = new HospitalManagement();\n\n        Patient p1 = new Patient(\"001\", \"Ali Mohamed\", \"ali@gmail.com\", \"0100000001\");\n        Doctor d1 = new Doctor(\"101\", \"Hossam\", \"hossam@gmail.com\", \"0111111111\", \"Cardiology\");\n        Nurse n1 = new Nurse(\"201\", \"Nour\", \"nour@gmail.com\", \"0122222222\");\n        Admin a1 = new Admin(\"301\", \"Mona\", \"mona@gmail.com\", \"0133333333\");\n\n        hm.addPatient(p1);\n        hm.addDoctor(d1);\n        hm.addNurse(n1);\n        hm.addAdmin(a1);\n        hm.addRoom(new Room(\"R-1\", \"General\"));\n        hm.addRoom(new Room(\"R-2\", \"ICU\"));\n\n        n1.assignPatient(p1);\n        n1.recordVitals(p1, \"BP:120/80, Temp:36.6\");\n        d1.writePrescription(p1, \"Paracetamol\", \"500mg\", \"3 days\");\n\n        hm.listPatients();\n        hm.listDoctors();\n        hm.listRooms();\n        p1.viewMedicalRecord();\n    }\n}"
+  }
+}
